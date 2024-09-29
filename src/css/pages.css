@@ -4,5 +4,16 @@
 }
 
 .product-page_container {
+    display: grid;
     max-width: 1080px;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+@media screen and (max-width: 1080px) {
+    .product-page_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        flex-wrap: wrap;
+    }
 }

@@ -1,10 +1,11 @@
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
-
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 function ImagesDetail() {
 
-    
+
 
     return (
         <div className="images-detail">
@@ -35,9 +36,13 @@ function ImagesDetail() {
                     </button>
                 </div>
                 <div className="main-image_wrap">
-                    <button className="main-image_button">a</button>
+                    <button className="main-image_button">
+                        <IoIosArrowBack />
+                    </button>
                     <img src="https://theme534-wholesale-store.myshopify.com/cdn/shop/products/oversized_v_neck_sweatshirt_1_576x.jpg?v=1683647633" alt="" className="main-image_img" />
-                    <button className="main-image_button">b</button>
+                    <button className="main-image_button">
+                        <IoIosArrowForward />
+                    </button>
                 </div>
             </div>
         </div>

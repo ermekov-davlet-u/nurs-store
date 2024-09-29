@@ -93,7 +93,7 @@
 
 .card-product_footer {
     padding-top: 1.2rem;
-    
+
 }
 
 .card-product_title {
@@ -110,4 +110,28 @@
         width: auto;
         height: 100%;
     }
+}
+
+/*
+    sizeswitcher
+*/
+
+.sizeswitch {
+    display: flex;
+}
+
+.sizeswitch_container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sizeswitch_name {
+    color: #6e6e6e;
+
+}
+
+.sizeswitch_buttons {
+    display: flex;
+    gap: 4px;
 }
