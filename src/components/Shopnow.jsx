@@ -1,21 +1,8 @@
-import { useEffect } from "react";
 import "../css/shopnow.css"
 import Button from "./ui-comp/Button";
 
 function Shopnow() {
 
-    function ArraySort(arr){
-        const newArr = arr;
-        return function (sort = "asc") {
-            return Object.freeze(newArr.sort((a, b) => {
-                if(sort == "desc") return b.id - a.id;
-                else if(sort == "asc") return a.id - b.id
-            }))
-        }
-    }
-
-    useEffect(() => {
-    }, [])
     return (
         <div className="shopnow_wrap">
             <div className="shopnow">

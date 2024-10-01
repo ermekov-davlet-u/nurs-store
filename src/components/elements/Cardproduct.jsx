@@ -2,9 +2,14 @@ import { CiHeart } from "react-icons/ci";
 import { FaRegEye } from "react-icons/fa6";
 import { CiSettings } from "react-icons/ci";
 import "../../css/element.css"
+import { useDispatch } from "react-redux";
+import { newProducts } from './../../redux/actions/product';
 
 
 function Cardproduct() {
+
+    const dispatch = useDispatch()
+
     return (
         <div className="card-product">
             <div className="card-product_container">
@@ -30,7 +35,9 @@ function Cardproduct() {
                         <div className="card-product_tool">
                             <FaRegEye />
                         </div>
-                        <div className="card-product_tool">
+                        <div className="card-product_tool" onClick={() => {
+                            dispatch(newProducts)
+                        }}>
                             <CiSettings />
                         </div>
                     </div>

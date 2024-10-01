@@ -13,6 +13,7 @@ export default function Header() {
 		<div className="header">
 			<div className="header-container">
 				<Logo></Logo>
+				<Menu />
 				<div className="header-toggle">
 					<div className="header-toggle_container">
 						<div className="header-toggle_button">
@@ -30,7 +31,6 @@ export default function Header() {
 					</div>
 				</div>
 			</div>
-			<Menu></Menu>
 		</div>
 	)
 }

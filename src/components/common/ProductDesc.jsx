@@ -3,6 +3,7 @@ import Sizeswitch from './../elements/Sizeswitch';
 import { FaRegEye } from "react-icons/fa";
 import InputNumber from "../ui-comp/NumberInput";
 import Button from './../ui-comp/Button';
+import CardProp from "../elements/CardProp";
 
 function ProductDesc() {
     return (
@@ -63,9 +64,16 @@ function ProductDesc() {
                         Lorem, ipsum dolor.
                     </div>
                 </div>
-                <Button title={"Add to card"}/>
+                <Button title={"Add to card"} options={{ mode: "secondary" }} />
                 <div className="product-viewed_count_block">
                     <InputNumber />
+                </div>
+                <div className="product_properties">
+                    <CardProp />
+                    <CardProp />
+                    <CardProp />
+                    <CardProp />
+                    <CardProp />
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 .card-product {
     max-height: 430px;
     max-width: 320px;
-    padding: 8px;
+    /* padding: 8px; */
 }
 
 .card-product_container {
@@ -134,4 +134,21 @@
 .sizeswitch_buttons {
     display: flex;
     gap: 4px;
+}
+
+.cardprop{
+    padding: 0;
+}
+.cardprop_container{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+}
+.cardprop_title{
+    color: #6e6e6e;
+
+}
+.cardprop_value{
+
 }

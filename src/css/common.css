@@ -1,7 +1,9 @@
 @import url(./inputs.css);
 
 .cards {
-    padding: 24px;
+    /* padding: 24px; */
+    display: flex;
+    justify-content: center;
 }
 
 .cards_container {
@@ -9,6 +11,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 8px;
     grid-auto-rows: minmax(360px, 1fr);
+    max-width: 1080px;
+    width: 100%;
 }
 
 @media screen and (max-width: 1080px) {
@@ -148,9 +152,7 @@
     display: flex;
 }
 
-.product-desc_raiting_star {
-
-}
+.product-desc_raiting_star {}
 
 .product-desc_raiting_text {
     color: burlywood;
@@ -186,7 +188,7 @@
 }
 
 .product-viewed {
-    display: flex;  
+    display: flex;
     gap: 8px;
     align-items: center;
 }
@@ -206,5 +208,12 @@
 }
 
 .product-viewed_count_block {
+    display: flex;
+    align-items: center;
+}
 
+.product_properties {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }

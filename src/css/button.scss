@@ -3,14 +3,17 @@
     display: flex;
     /* gap: 8px; */
     border-radius: 4px;
+    align-items: center;
     outline: none;
     cursor: pointer;
     background: linear-gradient(90deg, rgb(127, 190, 241) 0%, rgb(58, 187, 172) 22%, rgb(111, 217, 238) 100%);
     color: white;
     outline: none;
+    transition: all 4.2s ease-in;
     border: none;
-    transition: all 4.2s ease-in ;
 }
+
+
 .button:active{
     background: white;
     color: #444;
@@ -18,6 +21,7 @@
 
 .button_icon {
     padding: 8px;
+    font-size: 16px;
 }
 .button:active .button_icon{
     color: #444;
@@ -49,4 +53,12 @@
     font-size: 14px;
     font-weight: 200;
     color: #696969;
+}
+
+.button_secondary{
+    background: transparent;
+    border: 1px solid black;
+    .button_text, .button_icon{
+        color: #333;
+    }
 }
