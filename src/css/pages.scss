@@ -1,6 +1,7 @@
 .product-page {
     display: flex;
     justify-content: center;
+    margin: 24px auto;
 }
 
 .product-page_container {
@@ -15,5 +16,21 @@
         display: grid;
         grid-template-columns: 1fr;
         flex-wrap: wrap;
+    }
+}
+
+.catalog-page{
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+.catalog-page_container{
+    max-width: 1080px;
+    width: 100%;
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
     }
 }

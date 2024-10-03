@@ -14,7 +14,7 @@
 }
 
 
-.button:active{
+.button:active {
     background: white;
     color: #444;
 }
@@ -23,9 +23,11 @@
     padding: 8px;
     font-size: 16px;
 }
-.button:active .button_icon{
+
+.button:active .button_icon {
     color: #444;
 }
+
 .button_text {
     padding: 8px;
     text-transform: uppercase;
@@ -33,32 +35,57 @@
 
 }
 
-.button:active .button_text{
+.button:active .button_text {
     color: #444;
 }
 
 /*
     easy button style
 */
-.easybtn{
+.easybtn {
     padding: 4px 12px;
     border: 1px solid rgb(169, 169, 169);
     border-radius: 8px;
     box-shadow: 0px 0px 1px rgb(172, 172, 172);
 }
-.easybtn_container{
 
-}
-.easybtn_text{
+.easybtn_container {}
+
+.easybtn_text {
     font-size: 14px;
     font-weight: 200;
     color: #696969;
 }
 
-.button_secondary{
+.button_secondary {
     background: transparent;
     border: 1px solid black;
-    .button_text, .button_icon{
+
+    .button_text,
+    .button_icon {
         color: #333;
     }
+}
+
+.link-button {
+    padding: 4px;
+
+    &:hover {
+        background-color: #efefef;
+        cursor: pointer;
+    }
+}
+
+.link-button_link {
+    color: #00e6f2;
+    border-bottom: 1px solid #00e6f2;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+
 }

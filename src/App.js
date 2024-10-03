@@ -1,5 +1,5 @@
 import './App.css';
-import MainPage from './components/pages/index';
+import MainPage from './pages/index';
 import { Provider } from "react-redux";
 import { store } from './redux/store';
 function App() {

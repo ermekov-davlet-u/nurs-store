@@ -217,3 +217,8 @@
     flex-direction: column;
     gap: 2px;
 }
+
+.page-wrapper{
+    padding: 8px;
+    padding-top: 68px;
+}
