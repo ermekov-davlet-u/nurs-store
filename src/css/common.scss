@@ -33,13 +33,18 @@
 
 .images-detail {
     display: block;
-    height: 78vh;
+    max-height: calc(100vh - 88px);
 }
 
 .images-detail_container {
     display: flex;
     gap: 12px;
     height: 100%;
+
+    @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-rows: 120px 4fr;
+    }
 }
 
 .images-list {
@@ -51,6 +56,13 @@
     overflow: auto;
     position: relative;
     overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 .images-list_button,
@@ -66,10 +78,19 @@
     border: none;
     outline: none;
     z-index: 1;
+    // display: none;
+    @media screen and (max-width: 768px) {
+        left: 0;
+    }
 }
 
 .images-list_button:last-child {
     bottom: 0;
+    @media screen and (max-width: 768px) {
+        right: 0 !important;
+        left: calc(100% - 42px);
+        top: 30%;
+    }
 }
 
 .images-list_container {
@@ -79,7 +100,13 @@
     flex-direction: column;
     align-items: center;
     gap: 4px;
+
     /* top: 100px; */
+    @media screen and (max-width: 768px) {
+        flex-direction: row;
+        height: 100%;
+        position: relative;
+    }
 }
 
 .images-list_item {
@@ -87,11 +114,21 @@
     max-height: 232px;
     overflow: hidden;
     border: 1px solid #ccc;
+
+    @media screen and (max-width: 768px) {
+        height: 100%;
+        width: auto;
+    }
 }
 
 .images-list_item_img {
     width: 200px;
+
     /* max-height: 240px; */
+    @media screen and (max-width: 768px) {
+        height: 100%;
+        width: auto;
+    }
 }
 
 .images-list_button {
@@ -100,6 +137,12 @@
 
 .main-image_wrap {
     position: relative;
+    height: auto;
+
+    @media screen and (max-width: 768px) {
+        height: 320px;
+        width: auto;
+    }
 }
 
 .main-image_button {
@@ -114,6 +157,10 @@
 
 .main-image_img {
     max-height: 100%;
+    max-width: 100%;
+    @media screen and (max-width: 768px) {
+        height: 100%;
+    }
 }
 
 .main-image_button {}
@@ -125,6 +172,10 @@
 .product-desc {
     padding: 0px;
     max-width: 40vw;
+
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+    }
 }
 
 .product-desc_herder {}
@@ -133,6 +184,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .product-desc_herder_title {
@@ -140,22 +192,36 @@
     background-color: burlywood;
     display: inline;
     height: auto;
+    text-align: start;
 
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
 }
 
 .product-desc_raiting {
     display: flex;
     gap: 8px;
+    align-items: center;
 }
 
 .product-desc_raiting_stars {
     display: flex;
+    height: 15px;
 }
 
-.product-desc_raiting_star {}
+.product-desc_raiting_star {
+    font-size: 14px;
+    line-height: 14px;
+}
 
 .product-desc_raiting_text {
     color: burlywood;
+    text-align: start;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 
 .product-desc_container {
@@ -170,11 +236,19 @@
     font-size: 32px;
     font-weight: 600;
     text-align: start;
+
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .product-desc_price {
     font-size: 24px;
     letter-spacing: 2px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 13px;
+    }
 }
 
 .product-desc_size_switcher {
@@ -185,6 +259,10 @@
 .product-desc_text {
     text-align: start;
     color: #888;
+    font-size: 14px;
+    @media screen and (max-width: 768px) {
+        font-size: 13px;
+    }
 }
 
 .product-viewed {
@@ -196,15 +274,24 @@
 .product-viewed_icon {
     color: #888;
     line-height: 12px;
+    @media screen and (max-width: 768px) {
+        font-size: 13px;
+    }
 }
 
 .product-viewed_count {
     color: #888;
+    @media screen and (max-width: 768px) {
+        font-size: 13px;
+    }
 }
 
 .product-viewed_text {
     color: #888;
     margin-left: 12px;
+    @media screen and (max-width: 768px) {
+        font-size: 13px;
+    }
 }
 
 .product-viewed_count_block {
@@ -218,7 +305,10 @@
     gap: 2px;
 }
 
-.page-wrapper{
-    padding: 8px;
+.page-wrapper {
+    // padding: 8px;
     padding-top: 68px;
+    width: calc(100vw - 0px);
+    height: calc(100vh - 0px);
+    overflow: auto;
 }

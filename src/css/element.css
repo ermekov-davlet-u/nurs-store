@@ -1,7 +1,9 @@
 .card-product {
     max-height: 430px;
     max-width: 320px;
+    height: 100%;
     /* padding: 8px; */
+    
 }
 
 .card-product_container {
@@ -92,7 +94,7 @@
 }
 
 .card-product_footer {
-    padding-top: 1.2rem;
+    /* padding-top: 4px; */
 
 }
 
@@ -102,7 +104,14 @@
 }
 
 .card-product_price {
-    padding-top: 8px;
+    background: #ffdbc2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    /* border-radius: 24px; */
+    font-weight: 600;
+    color: brown;
 }
 
 @media screen and (max-width: 768px) {
@@ -136,6 +145,13 @@
     gap: 4px;
 }
 
+@media screen and (max-width: 768px) {
+    .sizeswitch_name {
+        font-size: 12px;
+    
+    }
+}
+
 .cardprop{
     padding: 0;
 }
@@ -151,6 +167,17 @@
 }
 .cardprop_value{
 
+}
+
+@media screen and (max-width: 768px) {
+    .cardprop_container{
+        font-size: 13px;
+    }
+    .cardprop_title{
+        color: #6e6e6e;
+    
+    }
+    
 }
 
 

@@ -1,18 +1,16 @@
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {};
 
-function userReduser(state=initialState, action) {
-    switch (action.type) {
-        case "NEWUSER":
-            return {
-                ...state,
-                users: action.payload
-            };
-        default:
-            return state;
+const userSlice = createSlice({
+    name: "user",
+    initialState,
+    reducers: {
+        newUser: (state, action) => {
+            state = action.payload
+        }
     }
-};
+});
 
-export {
-    userReduser
-}
+export const { newUser } = userSlice.actions;
+export default userSlice.reducer

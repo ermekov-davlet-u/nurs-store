@@ -10,30 +10,32 @@ function ImagesDetail() {
     return (
         <div className="images-detail">
             <div className="images-detail_container">
-                <div className="images-list">
-                    <button className="images-list_button">
-                        <IoIosArrowUp />
-                    </button>
-                    <div className="images-list_container">
-                        <div className="images-list_item">
-                            <img src="https://theme534-wholesale-store.myshopify.com/cdn/shop/products/oversized_v_neck_sweatshirt_1_576x.jpg?v=1683647633" alt="" className="images-list_item_img" />
+                <div className="images-list_wrap">
+                    <div className="images-list">
+                        <button className="images-list_button">
+                            <IoIosArrowUp />
+                        </button>
+                        <div className="images-list_container">
+                            <div className="images-list_item">
+                                <img src="https://theme534-wholesale-store.myshopify.com/cdn/shop/products/oversized_v_neck_sweatshirt_1_576x.jpg?v=1683647633" alt="" className="images-list_item_img" />
+                            </div>
+                            <div className="images-list_item">
+                                <img src="https://theme534-wholesale-store.myshopify.com/cdn/shop/products/oversized_v_neck_sweatshirt_4_576x.jpg?v=1683647633" alt="" className="images-list_item_img" />
+                            </div>
+                            <div className="images-list_item">
+                                <img src="https://theme534-wholesale-store.myshopify.com/cdn/shop/products/oversized_v_neck_sweatshirt_3_576x.jpg?v=1683647633" alt="" className="images-list_item_img" />
+                            </div>
+                            <div className="images-list_item">
+                                <img src="https://theme534-wholesale-store.myshopify.com/cdn/shop/products/oversized_v_neck_sweatshirt_2_576x.jpg?v=1683647633" alt="" className="images-list_item_img" />
+                            </div>
+                            <div className="images-list_item">
+                                <img src="https://theme534-wholesale-store.myshopify.com/cdn/shop/products/oversized_v_neck_sweatshirt_5_576x.jpg?v=1683647633" alt="" className="images-list_item_img" />
+                            </div>
                         </div>
-                        <div className="images-list_item">
-                            <img src="https://theme534-wholesale-store.myshopify.com/cdn/shop/products/oversized_v_neck_sweatshirt_4_576x.jpg?v=1683647633" alt="" className="images-list_item_img" />
-                        </div>
-                        <div className="images-list_item">
-                            <img src="https://theme534-wholesale-store.myshopify.com/cdn/shop/products/oversized_v_neck_sweatshirt_3_576x.jpg?v=1683647633" alt="" className="images-list_item_img" />
-                        </div>
-                        <div className="images-list_item">
-                            <img src="https://theme534-wholesale-store.myshopify.com/cdn/shop/products/oversized_v_neck_sweatshirt_2_576x.jpg?v=1683647633" alt="" className="images-list_item_img" />
-                        </div>
-                        <div className="images-list_item">
-                            <img src="https://theme534-wholesale-store.myshopify.com/cdn/shop/products/oversized_v_neck_sweatshirt_5_576x.jpg?v=1683647633" alt="" className="images-list_item_img" />
-                        </div>
+                        <button className="images-list_button">
+                            <IoIosArrowDown />
+                        </button>
                     </div>
-                    <button className="images-list_button">
-                        <IoIosArrowDown />
-                    </button>
                 </div>
                 <div className="main-image_wrap">
                     <button className="main-image_button">

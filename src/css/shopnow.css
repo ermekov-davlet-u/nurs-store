@@ -12,7 +12,7 @@
 .shopnow {
     min-height: 260px;
     padding: 24px;
-    background: rgba(245, 244, 12, .2);
+    background: rgb(98 224 212 / 20%);
     min-width: 320px;
     width: calc(50% - 8px);
     position: relative;

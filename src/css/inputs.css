@@ -11,6 +11,11 @@
     color: #333;
     text-transform: lowercase;
 }
+@media screen and (max-width: 768px) {
+    .input-number_label {
+        font-size: 12px;
+    }
+}
 
 .input-number_wrap {
     display: flex;

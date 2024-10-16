@@ -7,8 +7,9 @@ import "../css/pages.scss"
 import DetailPage from "./DetailPage";
 import ProductsPage from "./Product";
 import CatalogPage from "./CatalogPage";
+import FormPage from "./Form";
 
-export default function PageWrapper(){
+export default function PageRouting(){
 
     const router = createBrowserRouter([
         {
@@ -26,12 +27,16 @@ export default function PageWrapper(){
         {
           path: "/catalog",
           element: <CatalogPage/>,
+        },
+        {
+          path: "/form",
+          element: <FormPage/>,
         }
       ]);
 
     return (
             <>
-                <RouterProvider router={router} />
+              <RouterProvider router={router} />
             </>
     )
 }

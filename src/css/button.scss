@@ -9,8 +9,11 @@
     background: linear-gradient(90deg, rgb(127, 190, 241) 0%, rgb(58, 187, 172) 22%, rgb(111, 217, 238) 100%);
     color: white;
     outline: none;
-    transition: all 4.2s ease-in;
+    // transition: all 4.2s ease-in;
     border: none;
+    @media screen and (max-width: 768px) {
+        padding: 2px 8px;
+    }
 }
 
 
@@ -22,6 +25,9 @@
 .button_icon {
     padding: 8px;
     font-size: 16px;
+    @media screen and (max-width: 768px) {
+        font-size: 13px;
+    }
 }
 
 .button:active .button_icon {
@@ -32,7 +38,9 @@
     padding: 8px;
     text-transform: uppercase;
     letter-spacing: 4px;
-
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 
 .button:active .button_text {
@@ -52,8 +60,9 @@
 .easybtn_container {}
 
 .easybtn_text {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 200;
+    line-height: 14px;
     color: #696969;
 }
 

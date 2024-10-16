@@ -1,18 +1,16 @@
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [];
 
-function discountReduser(state=initialState, action) {
-    switch (action.type) {
-        case "NEWDISCOUNTS":
-            return {
-                ...state,
-                discounts: action.payload
-            };
-        default:
-            return state;
+const discountSlice = createSlice({
+    name: "discount",
+    initialState: initialState,
+    reducers: {
+        newDiscount: (state, action) => {
+            state = action.payload;
+        }
     }
-};
+});
 
-export {
-    discountReduser
-}
+export const { newDiscount } = discountSlice.actions;
+export default discountSlice.reducer;

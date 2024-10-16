@@ -1,11 +1,11 @@
 
 import Cardproduct from './../elements/Cardproduct';
-import "../../css/common.css"
+import "../../css/common.scss"
 import { useSelector } from 'react-redux';
 
 function Cards() {
 
-    const products = useSelector(state => state.products)
+    const products = useSelector(state => state.product)
     return (
         <div className="cards">
             <div className="cards_container">
