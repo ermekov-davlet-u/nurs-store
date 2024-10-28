@@ -1,4 +1,4 @@
-.form_page{
+.form-page{
     width: 100%;
     max-width: 1080px;
     margin: 0 auto;
@@ -6,10 +6,16 @@
     flex-direction: column;
 }
 
+.form-page_inp_groups{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .textedit{
     text-align: start;
     padding: 2px;
-    width: 320px;
+    // width: 320px;
 }
 .textedit_container{
     display: flex;

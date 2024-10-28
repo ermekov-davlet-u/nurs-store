@@ -5,12 +5,17 @@ import "../css/form.scss"
 function FormPage() {
     return (
         <PageWrapper>
-            <div className="form_page">
-                <TextEdit></TextEdit>
-                <TextEdit></TextEdit>
-                <TextEdit></TextEdit>
-                <TextEdit></TextEdit>
-                <TextEdit></TextEdit>
+            <div className="form-page">
+                <div className="form-page_title">
+                    Создание нового продукта
+                </div>
+                <div className="form-page_inp_groups">
+                    <TextEdit></TextEdit>
+                    <TextEdit></TextEdit>
+                    <TextEdit></TextEdit>
+                    <TextEdit></TextEdit>
+                    <TextEdit></TextEdit>
+                </div>
             </div>
         </PageWrapper>
     );

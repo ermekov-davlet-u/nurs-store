@@ -44,7 +44,7 @@ function Cardproduct() {
                 </div>
                 <div className="card-product_footer">
                     <div className="card-product_title">
-                        Lorem ipsum dolor sit amet.
+                        Новый товар.
                     </div>
                     <div className="card-product_price">
                         $115.00 $140.00

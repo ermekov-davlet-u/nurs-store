@@ -7,7 +7,8 @@ import { configureStore } from '@reduxjs/toolkit'
 export const store = configureStore({
   reducer: {
     category: categoryReduser,
-    product: productReduser
+    product: productReduser,
+    [productApi.reducerPath]: productApi.reducer
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(productApi.middleware)
